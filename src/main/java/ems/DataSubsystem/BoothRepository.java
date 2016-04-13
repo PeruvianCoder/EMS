@@ -1,6 +1,19 @@
 package ems.DataSubsystem;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
 public class BoothRepository {
+	@PersistenceContext
+	private EntityManager manager;
+	
+	/**
+	 * Initializes the EntityManager used throughout the repository
+	 * @param man EntityManager used to access data source
+	 */
+	public BoothRepository(EntityManager man){
+		this.manager = man;
+	}
 
 	/**
 	 * Retrieves the number of booths of some size available for 
@@ -9,9 +22,12 @@ public class BoothRepository {
 	 * @param size Size of the desired booths.
 	 * @return Number of booths of the given size available to be booked for that event.
 	 */
-	public int retrieveNumBoothAvailable(String size, String eventName) { 
-		// TODO Auto-generated method
-		return 0;
+	public int retrieveNumBoothAvailable(String size, Event event) { 
+		int result = (int) manager.createQuery("select b.Booths_count from booths b join exhibit e on e.Events_Id = :eventId where b.size = :size")
+					.setParameter("size", size)
+					.setParameter("eventName", event.id)
+					.getSingleResult();
+		return result;
 	 }
 
 	/**
@@ -19,7 +35,7 @@ public class BoothRepository {
 	 * @param booth The booth object to be stored in the database.
 	 */
 	public void storeBooth(Booth booth) { 
-		// TODO Auto-generated method
+		manager.persist(booth);
 	 }
 
 	/**
@@ -29,9 +45,13 @@ public class BoothRepository {
 	 * @param size Desired booth size to be checked.
 	 * @return Price of booking one booth of that size for that event.
 	 */
-	public double retrieveBoothCost(String size, String eventName) { 
+	public double retrieveBoothCost(String size, Event event) { 
 		// TODO Auto-generated method
-		return 0;
+		double result = (double) manager.createNativeQuery("select b.Booths_price from booths b join exhibit e on e.Events_Id = :eventId where b.size = :size")
+						.setParameter("eventId", event.id)
+						.setParameter("size", size)
+						.getSingleResult();
+		return result;
 	 } 
 
 }

@@ -1,7 +1,19 @@
 package ems.DataSubsystem;
 
-public class TicketRepository {
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 
+public class TicketRepository {
+	@PersistenceContext
+	private EntityManager manager;
+	
+	/**
+	 * Initializes the EntityManager used throughout the repository
+	 * @param man EntityManager used to access data source
+	 */
+	public TicketRepository(EntityManager man){
+		this.manager = man;
+	}
 	/**
 	 * Retrieves the ticket for the given user and event 
 	 * from the database.
@@ -10,8 +22,10 @@ public class TicketRepository {
 	 * @return Ticket Object bought by the user for the given event. 
 	 */
 	public Ticket retrieveTicket(Event event, String username) { 
-		// TODO Auto-generated method
-		return null;
+		Ticket result = (Ticket) manager.createQuery("select t from Ticket t where t.eventName = :eventName")
+						.setParameter("eventName", event.name)
+						.getSingleResult();
+		return result;
 	 }
 
 	/**
@@ -19,7 +33,7 @@ public class TicketRepository {
 	 * @param ticket Ticket object to be stored.
 	 */
 	public void storeTicket(Ticket ticket) { 
-		// TODO Auto-generated method
+		manager.persist(ticket);
 	 } 
 
 }

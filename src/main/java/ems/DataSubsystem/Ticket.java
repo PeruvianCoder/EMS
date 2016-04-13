@@ -1,5 +1,8 @@
 package ems.DataSubsystem;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
 /**
  * Entity class used for the sole purpose of representing 
  * the state of a ticket object. JPA will be used to persist 
@@ -7,6 +10,8 @@ package ems.DataSubsystem;
  * and the {@link ems.DataSubsystem.TicketRepository}.
  * @author emsTeam
  */
+@Entity
+@Table (name="tickets")
 public class Ticket {
 
 	/**

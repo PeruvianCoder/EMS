@@ -1,14 +1,29 @@
 package ems.DataSubsystem;
 
-public class EventRepository {
+import java.util.List;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+public class EventRepository {
+	@PersistenceContext
+	private EntityManager manager;
+	
+	/**
+	 * Initializes the EntityManager used throughout the repository
+	 * @param man EntityManager used to access data source
+	 */
+	public EventRepository(EntityManager man){
+		this.manager = man;
+	}
+	
 	/**
 	 * Retrieves a list of events from the database.
 	 * @return List of active events in the database.
 	 */
-	public Event retrieveEventsList() { 
-		// TODO Auto-generated method
-		return null;
+	public List<Event> retrieveEventsList() { 
+		List<Event> events = manager.createQuery("Select e from Event e", Event.class).getResultList();
+		return events;
 	 }
 
 	/**
@@ -16,7 +31,14 @@ public class EventRepository {
 	 * @param event Event to be stored.
 	 */
 	public void storeEvent(Event event) { 
-		// TODO Auto-generated method
+		manager.getTransaction().begin();
+		if(!manager.contains(event)){
+			manager.persist(event);
+		}
+		else{
+			System.out.println("This event already exists.");
+		}
+		manager.getTransaction().commit();
 	 }
 
 	/**
@@ -25,8 +47,10 @@ public class EventRepository {
 	 * @return The event with the specified name.
 	 */
 	public Event retrieveEvent(String eventName) { 
-		// TODO Auto-generated method
-		return null;
+		Event event = manager.createQuery("Select e from Event e where e.name = :eventName", Event.class)
+						.setParameter("eventName", eventName)
+						.getSingleResult();
+		return event;
 	 } 
 
 }

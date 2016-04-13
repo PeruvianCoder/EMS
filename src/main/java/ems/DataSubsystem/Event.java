@@ -1,5 +1,8 @@
 package ems.DataSubsystem;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
 /**
  * Entity class used for the sole purpose of representing 
  * the state of an event object. JPA will be used to persist 
@@ -7,8 +10,13 @@ package ems.DataSubsystem;
  * and the {@link ems.DataSubsystem.EventRepository}.
  * @author emsTeam
  */
+@Entity
+@Table (name="events")
 public class Event {
-
+	/**
+	 * Unique key of event.
+	 */
+	public int id;
 	/**
 	 * Path of the event image on the server.
 	 */
