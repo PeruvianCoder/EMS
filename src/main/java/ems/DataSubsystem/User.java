@@ -1,5 +1,9 @@
 package ems.DataSubsystem;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
 /**
  * Entity class used for the sole purpose of representing 
  * the state of a user object. JPA will be used to persist 
@@ -8,7 +12,8 @@ package ems.DataSubsystem;
  * @author emsTeam
  */
 public class User {
-	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	/**
 	 * Unique identifier of each user.
 	 */
