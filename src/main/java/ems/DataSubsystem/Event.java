@@ -1,6 +1,9 @@
 package ems.DataSubsystem;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
@@ -16,6 +19,8 @@ public class Event {
 	/**
 	 * Unique key of event.
 	 */
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	public int id;
 	/**
 	 * Path of the event image on the server.

@@ -12,7 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  *
  */
 public class Datastore {
-
+	
     /**
      * To be used for retrieving/persisting objects to the database.
      */

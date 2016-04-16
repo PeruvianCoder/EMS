@@ -1,5 +1,9 @@
 package ems.DataSubsystem;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
 /**
  * Entity class used for the sole purpose of representing 
  * the state of a proposal object. JPA will be used to persist 
@@ -8,7 +12,9 @@ package ems.DataSubsystem;
  * @author emsTeam
  */
 public class Proposal {
-
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	public int id;
 	/**
 	 * Full text of the proposal.
 	 */

@@ -1,6 +1,9 @@
 package ems.DataSubsystem;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
@@ -13,7 +16,9 @@ import javax.persistence.Table;
 @Entity
 @Table (name="booths")
 public class Booth {
-
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	public int id;
 	/**
 	 * Amount paid for each booth.
 	 */
