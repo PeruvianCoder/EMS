@@ -23,7 +23,7 @@ public class BoothRepository {
 	 * @return Number of booths of the given size available to be booked for that event.
 	 */
 	public int retrieveNumBoothAvailable(String size, Event event) { 
-		int result = (int) manager.createQuery("select b.Booths_count from booths b join exhibit e on e.Events_Id = :eventId where b.size = :size")
+		int result = (Integer) manager.createQuery("select b.Booths_count from booths b join exhibit e on e.Events_Id = :eventId where b.size = :size")
 					.setParameter("size", size)
 					.setParameter("eventName", event.id)
 					.getSingleResult();
@@ -47,7 +47,7 @@ public class BoothRepository {
 	 */
 	public double retrieveBoothCost(String size, Event event) { 
 		// TODO Auto-generated method
-		double result = (double) manager.createNativeQuery("select b.Booths_price from booths b join exhibit e on e.Events_Id = :eventId where b.size = :size")
+		double result = (Double) manager.createNativeQuery("select b.Booths_price from booths b join exhibit e on e.Events_Id = :eventId where b.size = :size")
 						.setParameter("eventId", event.id)
 						.setParameter("size", size)
 						.getSingleResult();

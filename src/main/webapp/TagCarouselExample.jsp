@@ -22,5 +22,5 @@
 			<ems:carouselItem alt="${alts[i]}" src="${images[i]}" active="false"/>
 		</c:forEach>
 	</ems:carousel>
-</ems:body>
+</ems:body> 
 </ems:html>

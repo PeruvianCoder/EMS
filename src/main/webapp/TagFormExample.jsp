@@ -10,6 +10,12 @@
 			<ems:formTextInput name="eventCategory" label="Category" value="Trade Show"/>
 			<ems:formTextInput name="exhibitors" label="Exhibitors" value="Cars and Stuff"/>
 			<ems:formTextInput name="location" label="Location" value="Biscayne Bay Park"/>
+			<ems:dropdownMenu>
+				<ems:dropdownMenuOption value="one"/>
+				<ems:dropdownMenuOption value="twoo"/>
+				<ems:dropdownMenuOption value="three"/>
+			</ems:dropdownMenu>
+			<ems:dateInput label="Start Date" placeholder="Enter Date Here"/>
 			<ems:formFileInput label="Upload Logo" name="Upload Logo"/>
 			<br/>
 			<ems:formSubmitInput label="Create Event"/>

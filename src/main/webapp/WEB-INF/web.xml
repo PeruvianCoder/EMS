@@ -1,34 +1,23 @@
-<web-app id="WEB-APP" xmlns="http://java.sun.com/xml/ns/javaee"
-	      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	      xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
-	      http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
-	      version="2.5">
-
-    <!-- Configuration file for the root application context-->
-
-    <listener>
-        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-    </listener>
-    <context-param>
-        <param-name>contextConfigLocation</param-name>
-        <param-value>
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WEB-APP" version="2.5">
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>
             /WEB-INF/spring-servlet.xml
         </param-value>
-    </context-param>
-     
-    <!-- Configuration for the DispatcherServlet -->
-    <servlet>
-        <servlet-name>spring</servlet-name>
-            <servlet-class>
+  </context-param>
+  <servlet>
+    <servlet-name>spring</servlet-name>
+    <servlet-class>
                 org.springframework.web.servlet.DispatcherServlet
             </servlet-class>
-        <load-on-startup>1</load-on-startup>
-    </servlet>
- 
-    <servlet-mapping id="ServletMapping_1459040525013">
-        <servlet-name>spring</servlet-name>
-        <url-pattern>/</url-pattern>
-    </servlet-mapping>
-    
- 
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping id="ServletMapping_1459040525013">
+    <servlet-name>spring</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
 </web-app>

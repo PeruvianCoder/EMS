@@ -2,6 +2,8 @@ package ems.DataSubsystem;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 /**
  * This is a facade for the data subsystem. Every access(retrieve/persist) to data  
  * will be done through this facade. This is the only class with direct knowledge 
@@ -14,46 +16,54 @@ public class Datastore {
     /**
      * To be used for retrieving/persisting objects to the database.
      */
+	//@Autowired
     private TicketRepository ticketRepository;
 
     /**
      * To be used for retrieving/persisting location objects to the database.
      */
+	// @Autowired
     private LocationRepository locationRepository;
 
     /**
      * To be used for retrieving/persisting proposal objects to the database.
      */
+	//@Autowired
     private ProposalRepository proposalRepository;
 
     /**
      * To be used for retrieving/persisting user objects to the database.
      */
+//	@Autowired
     private UserRepository userRepository;
 
     /**
      * To be used for retrieving/persisting payment objects to the database.
      */
+//	@Autowired
     private PaymentRepository paymentRepository;
 
     /**
      * To be used for retrieving/persisting proposalReview objects to the database.
      */
+//	@Autowired
     private ProposalReviewRepository proposalReviewRepository;
 
     /**
      * To be used for retrieving/persisting event objects to the database.
      */
+//	@Autowired
     private EventRepository eventRepository;
 
     /**
      * To be used for retrieving/persisting booth objects to the database.
      */
+//	@Autowired
     private BoothRepository boothRepository;
 
     /**
      * Getter of ticketRepository
-     */
+     */	
     public TicketRepository getTicketRepository() {
         return ticketRepository;
     }

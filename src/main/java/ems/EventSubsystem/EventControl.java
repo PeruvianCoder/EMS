@@ -1,5 +1,7 @@
 package ems.EventSubsystem;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import ems.DataSubsystem.Datastore;
 import ems.DataSubsystem.Event;
 import ems.DataSubsystem.Payment;
@@ -19,6 +21,7 @@ public class EventControl {
 	 * entity classes will be performed through this facade.
 	 * @see ems.DataSubsystem 
 	 */
+	@Autowired
 	private Datastore datastore;
 
 	/**

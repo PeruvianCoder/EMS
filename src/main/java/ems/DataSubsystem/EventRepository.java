@@ -21,7 +21,8 @@ public class EventRepository {
 	 * Retrieves a list of events from the database.
 	 * @return List of active events in the database.
 	 */
-	public List<Event> retrieveEventsList() { 
+	public List<Event> retrieveEventsList() {
+		//todo this should only be "active" events, for now it doesnt matter
 		List<Event> events = manager.createQuery("Select e from Event e", Event.class).getResultList();
 		return events;
 	 }
