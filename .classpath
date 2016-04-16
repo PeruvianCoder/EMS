@@ -28,7 +28,13 @@
 			<attribute name="owner.project.facets" value="jst.web"/>
 		</attributes>
 	</classpathentry>
+<<<<<<< HEAD
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.7.0_80">
+=======
+	<classpathentry kind="lib" path="C:/Users/Carlos/Downloads/commons-logging-1.2-bin/commons-logging-1.2/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Carlos/Downloads/tomcat-juli.jar/tomcat-juli.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_40">
+>>>>>>> f00e7d5c12e88f507b92d01dff3c25ed49e0709f
 		<attributes>
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>

@@ -281,5 +281,12 @@ public class Datastore {
     public void storeNewUser(User user) {
         userRepository.storeUser(user);
     }
+    
+    /**
+     * Retrieves a list of locations available for a particular event.
+     */
+    public List<Location> retrieveLocationsList(){
+    	return locationRepository.retrieveLocationsList();
+    }
 }
 
