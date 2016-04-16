@@ -1,14 +1,29 @@
 package ems.DataSubsystem;
 
-public class LocationRepository {
+import java.util.List;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+public class LocationRepository {
+	@PersistenceContext
+	private EntityManager manager;
+	
+	/**
+	 * Initializes the EntityManager used throughout the repository
+	 * @param man EntityManager used to access data source
+	 */
+	public LocationRepository(EntityManager man){
+		this.manager = man;
+	}
+	
 	/**
 	 * Retrieves a list of locations from the database.
 	 * @return List of location objects from the database.
 	 */
-	public Location retrieveLocationsList() { 
-		// TODO Auto-generated method
-		return null;
+	public List<Location> retrieveLocationsList() { 
+		List<Location> locations = manager.createQuery("Select e from Event e", Location.class).getResultList();
+		return locations;
 	 }
 
 	/**
@@ -17,8 +32,10 @@ public class LocationRepository {
 	 * @return The location object with the specified name.
 	 */
 	public Location retrieveLocation(String locationName) { 
-		// TODO Auto-generated method
-		return null;
+		Location location = manager.createQuery("Select l from Location l where l.name = :locationName", Location.class)
+				.setParameter("locationName", locationName)
+				.getSingleResult();
+		return location;
 	 }
 
 	/**
@@ -26,7 +43,14 @@ public class LocationRepository {
 	 * @param location The location object to be stored in the database.
 	 */
 	public void storeLocation(Location location) { 
-		// TODO Auto-generated method
+		manager.getTransaction().begin();
+		if(!manager.contains(location)){
+			manager.persist(location);
+		}
+		else{
+			System.out.println("This location already exists.");
+		}
+		manager.getTransaction().commit();
 	 } 
 
 }

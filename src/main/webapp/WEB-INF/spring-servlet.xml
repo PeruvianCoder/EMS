@@ -51,7 +51,7 @@
       <property name="driverClassName" value="com.mysql.jdbc.Driver" />
       <property name="url" value="jdbc:mysql://localhost:3306/test" />
       <property name="username" value="root" />
-      <property name="password" value="pepote53" />
+      <property name="password" value="root" />
    </bean>
      
     <!-- This transaction manager is appropriate for applications that use a single JPA EntityManagerFactory for transactional data access. 

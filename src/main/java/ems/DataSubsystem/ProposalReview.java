@@ -8,7 +8,10 @@ package ems.DataSubsystem;
  * @author emsTeam
  */
 public class ProposalReview {
-
+	/**
+	 * Title of proposal.
+	 */
+	public String title;
 	/**
 	 * Reviewer comments when reviewing the proposal.
 	 */
@@ -40,6 +43,13 @@ public class ProposalReview {
 	 */
 	public void setDecision(String decision) { 
 		 this.decision = decision; 
-	} 
+	}
+	
+	/**
+	 * Getter of title
+	 */
+	public String getTitle() {
+	 	 return title; 
+	}
 
 }

@@ -18627,3 +18627,542 @@ Caused by: java.net.ConnectException: Connection refused: connect
 2016-04-10 16:59:32 DEBUG DispatcherServlet:931 - Last-Modified value for [/demo/assets/ico/favicon.png] is: -1
 2016-04-10 16:59:32 DEBUG DispatcherServlet:1018 - Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
 2016-04-10 16:59:32 DEBUG DispatcherServlet:996 - Successfully completed request
+2016-04-15 19:20:39 INFO  ContextLoader:285 - Root WebApplicationContext: initialization started
+2016-04-15 19:20:40 DEBUG StandardServletEnvironment:109 - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2016-04-15 19:20:40 DEBUG StandardServletEnvironment:109 - Adding [servletContextInitParams] PropertySource with lowest search precedence
+2016-04-15 19:20:40 DEBUG StandardServletEnvironment:109 - Adding [jndiProperties] PropertySource with lowest search precedence
+2016-04-15 19:20:40 DEBUG StandardServletEnvironment:109 - Adding [systemProperties] PropertySource with lowest search precedence
+2016-04-15 19:20:40 DEBUG StandardServletEnvironment:109 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-04-15 19:20:40 DEBUG StandardServletEnvironment:126 - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2016-04-15 19:20:40 DEBUG StandardServletEnvironment:174 - Replacing [servletContextInitParams] PropertySource with [servletContextInitParams]
+2016-04-15 19:20:40 INFO  XmlWebApplicationContext:510 - Refreshing Root WebApplicationContext: startup date [Fri Apr 15 19:20:40 EDT 2016]; root of context hierarchy
+2016-04-15 19:20:40 DEBUG StandardEnvironment:109 - Adding [systemProperties] PropertySource with lowest search precedence
+2016-04-15 19:20:40 DEBUG StandardEnvironment:109 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-04-15 19:20:40 DEBUG StandardEnvironment:126 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2016-04-15 19:20:40 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-servlet.xml]
+2016-04-15 19:20:40 DEBUG DefaultDocumentLoader:73 - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2016-04-15 19:20:40 DEBUG PluggableSchemaResolver:141 - Loading schema mappings from [META-INF/spring.schemas]
+2016-04-15 19:20:40 DEBUG PluggableSchemaResolver:147 - Loaded schema mappings: {http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/aop/spring-aop-4.1.xsd=org/springframework/aop/config/spring-aop-4.1.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.1.xsd=org/springframework/jdbc/config/spring-jdbc-4.1.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd=org/springframework/web/servlet/config/spring-mvc-4.1.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/lang/spring-lang-4.1.xsd=org/springframework/scripting/config/spring-lang-4.1.xsd, http://www.springframework.org/schema/context/spring-context-4.0.xsd=org/springframework/context/config/spring-context-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd=org/springframework/web/servlet/config/spring-mvc-3.2.xsd, http://www.springframework.org/schema/tool/spring-tool-4.1.xsd=org/springframework/beans/factory/xml/spring-tool-4.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-4.1.xsd=org/springframework/ejb/config/spring-jee-4.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-4.1.xsd, http://www.springframework.org/schema/cache/spring-cache-4.1.xsd=org/springframework/cache/config/spring-cache-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-4.0.xsd=org/springframework/aop/config/spring-aop-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.0.xsd=org/springframework/jdbc/config/spring-jdbc-4.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd=org/springframework/web/servlet/config/spring-mvc-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-4.0.xsd=org/springframework/scripting/config/spring-lang-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-4.1.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd=org/springframework/web/servlet/config/spring-mvc-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-4.1.xsd=org/springframework/beans/factory/xml/spring-beans-4.1.xsd, http://www.springframework.org/schema/tool/spring-tool-4.0.xsd=org/springframework/beans/factory/xml/spring-tool-4.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.2.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-4.0.xsd=org/springframework/ejb/config/spring-jee-4.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/task/spring-task-4.1.xsd=org/springframework/scheduling/config/spring-task-4.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-4.1.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-4.1.xsd=org/springframework/transaction/config/spring-tx-4.1.xsd, http://www.springframework.org/schema/cache/spring-cache-4.0.xsd=org/springframework/cache/config/spring-cache-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-4.0.xsd=org/springframework/beans/factory/xml/spring-beans-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-4.1.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/task/spring-task-4.0.xsd=org/springframework/scheduling/config/spring-task-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-4.0.xsd=org/springframework/transaction/config/spring-tx-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/util/spring-util-4.1.xsd=org/springframework/beans/factory/xml/spring-util-4.1.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-4.1.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/util/spring-util-4.0.xsd=org/springframework/beans/factory/xml/spring-util-4.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-4.1.xsd, http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-4.1.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-4.1.xsd, http://www.springframework.org/schema/context/spring-context-4.1.xsd=org/springframework/context/config/spring-context-4.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-4.1.xsd}
+2016-04-15 19:20:40 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/beans/spring-beans-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.0.xsd
+2016-04-15 19:20:40 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/context/spring-context-3.0.xsd] in classpath: org/springframework/context/config/spring-context-3.0.xsd
+2016-04-15 19:20:40 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/tool/spring-tool-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-3.0.xsd
+2016-04-15 19:20:40 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd] in classpath: org/springframework/web/servlet/config/spring-mvc-3.2.xsd
+2016-04-15 19:20:40 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/tx/spring-tx-3.2.xsd] in classpath: org/springframework/transaction/config/spring-tx-3.2.xsd
+2016-04-15 19:20:40 DEBUG DefaultBeanDefinitionDocumentReader:98 - Loading bean definitions
+2016-04-15 19:20:40 DEBUG DefaultNamespaceHandlerResolver:157 - Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/mvc=org.springframework.web.servlet.config.MvcNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+2016-04-15 19:20:41 DEBUG StandardEnvironment:109 - Adding [systemProperties] PropertySource with lowest search precedence
+2016-04-15 19:20:41 DEBUG StandardEnvironment:109 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-04-15 19:20:41 DEBUG StandardEnvironment:126 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2016-04-15 19:20:41 DEBUG ClassPathBeanDefinitionScanner:252 - JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+2016-04-15 19:20:41 DEBUG PathMatchingResourcePatternResolver:622 - Looking for matching resources in directory tree [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems]
+2016-04-15 19:20:41 DEBUG PathMatchingResourcePatternResolver:684 - Searching directory [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems] for files matching pattern [C:/Users/Carlos/Downloads/Spring-demo-projects/EMS-Spring-Tags-Template/target/classes/ems/**/*.class]
+2016-04-15 19:20:41 DEBUG PathMatchingResourcePatternResolver:684 - Searching directory [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\AccountSubsystem] for files matching pattern [C:/Users/Carlos/Downloads/Spring-demo-projects/EMS-Spring-Tags-Template/target/classes/ems/**/*.class]
+2016-04-15 19:20:41 DEBUG PathMatchingResourcePatternResolver:684 - Searching directory [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\AdminSubsystem] for files matching pattern [C:/Users/Carlos/Downloads/Spring-demo-projects/EMS-Spring-Tags-Template/target/classes/ems/**/*.class]
+2016-04-15 19:20:41 DEBUG PathMatchingResourcePatternResolver:684 - Searching directory [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\DataSubsystem] for files matching pattern [C:/Users/Carlos/Downloads/Spring-demo-projects/EMS-Spring-Tags-Template/target/classes/ems/**/*.class]
+2016-04-15 19:20:41 DEBUG PathMatchingResourcePatternResolver:684 - Searching directory [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\EventSubsystem] for files matching pattern [C:/Users/Carlos/Downloads/Spring-demo-projects/EMS-Spring-Tags-Template/target/classes/ems/**/*.class]
+2016-04-15 19:20:41 DEBUG PathMatchingResourcePatternResolver:684 - Searching directory [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\ProposalSubsystem] for files matching pattern [C:/Users/Carlos/Downloads/Spring-demo-projects/EMS-Spring-Tags-Template/target/classes/ems/**/*.class]
+2016-04-15 19:20:41 DEBUG PathMatchingResourcePatternResolver:423 - Resolved location pattern [classpath*:ems/**/*.class] to resources [file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\AccountSubsystem\AccountControl.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\AccountSubsystem\DashboardPage.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\AccountSubsystem\LandingPage.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\AccountSubsystem\LoginPage.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\AccountSubsystem\RegistrationPage.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\AdminSubsystem\AddLocationPage.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\AdminSubsystem\AddUserPage.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\AdminSubsystem\AdminControl.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\DataSubsystem\Booth.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\DataSubsystem\BoothRepository.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\DataSubsystem\Datastore.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\DataSubsystem\Event.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\DataSubsystem\EventRepository.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\DataSubsystem\Location.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\DataSubsystem\LocationRepository.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\DataSubsystem\Payment.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\DataSubsystem\PaymentRepository.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\DataSubsystem\Proposal.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\DataSubsystem\ProposalRepository.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\DataSubsystem\ProposalReview.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\DataSubsystem\ProposalReviewRepository.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\DataSubsystem\Ticket.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\DataSubsystem\TicketRepository.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\DataSubsystem\User.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\DataSubsystem\UserRepository.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\EventSubsystem\AndroidAPI.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\EventSubsystem\AndroidAPIInterface.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\EventSubsystem\BookBoothPage.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\EventSubsystem\EventControl.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\EventSubsystem\EventDetailsPage.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\EventSubsystem\EventsPage.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\EventSubsystem\NewEventPage.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\EventSubsystem\PaypalAPI.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\EventSubsystem\PurchaseTicketPage.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\EventSubsystem\TransactionHistoryPage.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\ProposalSubsystem\ProposalControl.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\ProposalSubsystem\ProposalListPage.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\ProposalSubsystem\ReviewProposalPage.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\ProposalSubsystem\SubmitProposalPage.class]]
+2016-04-15 19:20:41 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.web.servlet.view.InternalResourceViewResolver#0]
+2016-04-15 19:20:41 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter#3ae0b770]
+2016-04-15 19:20:41 DEBUG XmlBeanDefinitionReader:224 - Loaded 33 bean definitions from location pattern [/WEB-INF/spring-servlet.xml]
+2016-04-15 19:20:41 DEBUG XmlWebApplicationContext:540 - Bean factory for Root WebApplicationContext: org.springframework.beans.factory.support.DefaultListableBeanFactory@3d49fd31: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,mvcUriComponentsContributor,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,mvcResourceUrlProvider,org.springframework.web.servlet.handler.MappedInterceptor#1,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,mvcPathMatcher,mvcUrlPathHelper,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,messageSource,entityManagerFactoryBean,dataSource,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor]; root of factory hierarchy
+2016-04-15 19:20:41 DEBUG DefaultListableBeanFactory:867 - Registering scope 'request' with implementation [org.springframework.web.context.request.RequestScope@51ce6f85]
+2016-04-15 19:20:41 DEBUG DefaultListableBeanFactory:867 - Registering scope 'session' with implementation [org.springframework.web.context.request.SessionScope@65b66b08]
+2016-04-15 19:20:41 DEBUG DefaultListableBeanFactory:867 - Registering scope 'globalSession' with implementation [org.springframework.web.context.request.SessionScope@4726927c]
+2016-04-15 19:20:41 DEBUG DefaultListableBeanFactory:867 - Registering scope 'application' with implementation [org.springframework.web.context.support.ServletContextScope@28e19366]
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:450 - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:478 - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:450 - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2016-04-15 19:20:42 INFO  AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:478 - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:450 - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:478 - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:450 - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:478 - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:450 - Creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor' to allow for resolving potential circular references
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:478 - Finished creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:450 - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:478 - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:450 - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:478 - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:450 - Creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.aop.config.internalAutoProxyCreator' to allow for resolving potential circular references
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:478 - Finished creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'messageSource'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:450 - Creating instance of bean 'messageSource'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'messageSource' to allow for resolving potential circular references
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:450 - Creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.transaction.config.internalTransactionAdvisor' to allow for resolving potential circular references
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:450 - Creating instance of bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' to allow for resolving potential circular references
+2016-04-15 19:20:42 DEBUG BeanFactoryAdvisorRetrievalHelper:87 - Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:478 - Finished creating instance of bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:478 - Finished creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:478 - Finished creating instance of bean 'messageSource'
+2016-04-15 19:20:42 DEBUG XmlWebApplicationContext:636 - Using MessageSource [org.springframework.context.support.ResourceBundleMessageSource: basenames=[messages]]
+2016-04-15 19:20:42 DEBUG XmlWebApplicationContext:670 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@3a175162]
+2016-04-15 19:20:42 DEBUG UiApplicationContextUtils:85 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@859ea42]
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'entityManagerFactoryBean'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:450 - Creating instance of bean 'entityManagerFactoryBean'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'entityManagerFactoryBean' to allow for resolving potential circular references
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'dataSource'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:450 - Creating instance of bean 'dataSource'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'dataSource' to allow for resolving potential circular references
+2016-04-15 19:20:42 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:248 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:478 - Finished creating instance of bean 'dataSource'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:450 - Creating instance of bean 'org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter#3ae0b770'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:248 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:478 - Finished creating instance of bean 'org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter#3ae0b770'
+2016-04-15 19:20:42 DEBUG DefaultListableBeanFactory:1608 - Invoking afterPropertiesSet() on bean with name 'entityManagerFactoryBean'
+2016-04-15 19:20:42 DEBUG PathMatchingResourcePatternResolver:622 - Looking for matching resources in directory tree [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\DataSubsystem]
+2016-04-15 19:20:42 DEBUG PathMatchingResourcePatternResolver:684 - Searching directory [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\DataSubsystem] for files matching pattern [C:/Users/Carlos/Downloads/Spring-demo-projects/EMS-Spring-Tags-Template/target/classes/ems/DataSubsystem/**/*.class]
+2016-04-15 19:20:42 DEBUG PathMatchingResourcePatternResolver:423 - Resolved location pattern [classpath*:ems/DataSubsystem/**/*.class] to resources [file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\DataSubsystem\Booth.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\DataSubsystem\BoothRepository.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\DataSubsystem\Datastore.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\DataSubsystem\Event.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\DataSubsystem\EventRepository.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\DataSubsystem\Location.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\DataSubsystem\LocationRepository.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\DataSubsystem\Payment.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\DataSubsystem\PaymentRepository.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\DataSubsystem\Proposal.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\DataSubsystem\ProposalRepository.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\DataSubsystem\ProposalReview.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\DataSubsystem\ProposalReviewRepository.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\DataSubsystem\Ticket.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\DataSubsystem\TicketRepository.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\DataSubsystem\User.class], file [C:\Users\Carlos\Downloads\Spring-demo-projects\EMS-Spring-Tags-Template\target\classes\ems\DataSubsystem\UserRepository.class]]
+2016-04-15 19:20:42 INFO  LocalContainerEntityManagerFactoryBean:339 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-04-15 19:20:42 DEBUG logging:141 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration boolean -> org.hibernate.type.BooleanType@6ede46f6
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration boolean -> org.hibernate.type.BooleanType@6ede46f6
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@6ede46f6
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@51c959a4
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration true_false -> org.hibernate.type.TrueFalseType@1effd53c
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration yes_no -> org.hibernate.type.YesNoType@6069dd38
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration byte -> org.hibernate.type.ByteType@26dc9bd5
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration byte -> org.hibernate.type.ByteType@26dc9bd5
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@26dc9bd5
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration character -> org.hibernate.type.CharacterType@2f236de0
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration char -> org.hibernate.type.CharacterType@2f236de0
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@2f236de0
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration short -> org.hibernate.type.ShortType@9596ce8
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration short -> org.hibernate.type.ShortType@9596ce8
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@9596ce8
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration integer -> org.hibernate.type.IntegerType@26c47874
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration int -> org.hibernate.type.IntegerType@26c47874
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@26c47874
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration long -> org.hibernate.type.LongType@7a0e7ecd
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration long -> org.hibernate.type.LongType@7a0e7ecd
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.lang.Long -> org.hibernate.type.LongType@7a0e7ecd
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration float -> org.hibernate.type.FloatType@122d6c22
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration float -> org.hibernate.type.FloatType@122d6c22
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@122d6c22
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration double -> org.hibernate.type.DoubleType@4c6007fb
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration double -> org.hibernate.type.DoubleType@4c6007fb
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@4c6007fb
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@117525fe
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@117525fe
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@6dd1c3ed
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@6dd1c3ed
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration string -> org.hibernate.type.StringType@78054f54
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.lang.String -> org.hibernate.type.StringType@78054f54
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration url -> org.hibernate.type.UrlType@654c7d2d
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.net.URL -> org.hibernate.type.UrlType@654c7d2d
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration date -> org.hibernate.type.DateType@620c8641
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.sql.Date -> org.hibernate.type.DateType@620c8641
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration time -> org.hibernate.type.TimeType@68d7a2df
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@68d7a2df
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration timestamp -> org.hibernate.type.TimestampType@56a4f272
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@56a4f272
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@56a4f272
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@4d41ba0f
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration calendar -> org.hibernate.type.CalendarType@7fdab70c
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@7fdab70c
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@7fdab70c
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@6f94a5a5
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration locale -> org.hibernate.type.LocaleType@7bc44ce8
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@7bc44ce8
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration currency -> org.hibernate.type.CurrencyType@337bbfdf
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@337bbfdf
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration timezone -> org.hibernate.type.TimeZoneType@2924f1d8
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@2924f1d8
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration class -> org.hibernate.type.ClassType@6e0c6a7a
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@6e0c6a7a
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@6c3659be
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@6c3659be
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@5f0f9947
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@2e66bc32
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration binary -> org.hibernate.type.BinaryType@4d95a72e
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration byte[] -> org.hibernate.type.BinaryType@4d95a72e
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration [B -> org.hibernate.type.BinaryType@4d95a72e
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@4d21c56e
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@4d21c56e
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@4d21c56e
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration image -> org.hibernate.type.ImageType@15639440
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration characters -> org.hibernate.type.CharArrayType@5a6d30e2
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration char[] -> org.hibernate.type.CharArrayType@5a6d30e2
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration [C -> org.hibernate.type.CharArrayType@5a6d30e2
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@6dcc40f5
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@6dcc40f5
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@6dcc40f5
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration text -> org.hibernate.type.TextType@328d044f
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration blob -> org.hibernate.type.BlobType@6540cf1d
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@6540cf1d
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@5484117b
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration clob -> org.hibernate.type.ClobType@1305c126
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@1305c126
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@762637be
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration serializable -> org.hibernate.type.SerializableType@5634d0f4
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration object -> org.hibernate.type.ObjectType@7d44a19
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@7d44a19
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@6573d2f7
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@4052c8c2
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@181b8c4b
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@38eb0f4d
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@437486cd
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@15b642b9
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@518bfd90
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@317a118b
+2016-04-15 19:20:43 INFO  Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+2016-04-15 19:20:43 INFO  Version:41 - HHH000412: Hibernate Core {4.0.1.Final}
+2016-04-15 19:20:43 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-04-15 19:20:43 INFO  Environment:342 - HHH000021: Bytecode provider name : javassist
+2016-04-15 19:20:43 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2016-04-15 19:20:43 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2016-04-15 19:20:43 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2016-04-15 19:20:43 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2016-04-15 19:20:43 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [hilo] -> [org.hibernate.id.TableHiLoGenerator]
+2016-04-15 19:20:43 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2016-04-15 19:20:43 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2016-04-15 19:20:43 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2016-04-15 19:20:43 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.SequenceGenerator]
+2016-04-15 19:20:43 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2016-04-15 19:20:43 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2016-04-15 19:20:43 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2016-04-15 19:20:43 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2016-04-15 19:20:43 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2016-04-15 19:20:43 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration boolean -> org.hibernate.type.BooleanType@6ede46f6
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration boolean -> org.hibernate.type.BooleanType@6ede46f6
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@6ede46f6
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@51c959a4
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration true_false -> org.hibernate.type.TrueFalseType@1effd53c
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration yes_no -> org.hibernate.type.YesNoType@6069dd38
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration byte -> org.hibernate.type.ByteType@26dc9bd5
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration byte -> org.hibernate.type.ByteType@26dc9bd5
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@26dc9bd5
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration character -> org.hibernate.type.CharacterType@2f236de0
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration char -> org.hibernate.type.CharacterType@2f236de0
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@2f236de0
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration short -> org.hibernate.type.ShortType@9596ce8
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration short -> org.hibernate.type.ShortType@9596ce8
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@9596ce8
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration integer -> org.hibernate.type.IntegerType@26c47874
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration int -> org.hibernate.type.IntegerType@26c47874
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@26c47874
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration long -> org.hibernate.type.LongType@7a0e7ecd
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration long -> org.hibernate.type.LongType@7a0e7ecd
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.lang.Long -> org.hibernate.type.LongType@7a0e7ecd
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration float -> org.hibernate.type.FloatType@122d6c22
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration float -> org.hibernate.type.FloatType@122d6c22
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@122d6c22
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration double -> org.hibernate.type.DoubleType@4c6007fb
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration double -> org.hibernate.type.DoubleType@4c6007fb
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@4c6007fb
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@117525fe
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@117525fe
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@6dd1c3ed
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@6dd1c3ed
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration string -> org.hibernate.type.StringType@78054f54
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.lang.String -> org.hibernate.type.StringType@78054f54
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration url -> org.hibernate.type.UrlType@654c7d2d
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.net.URL -> org.hibernate.type.UrlType@654c7d2d
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration date -> org.hibernate.type.DateType@620c8641
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.sql.Date -> org.hibernate.type.DateType@620c8641
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration time -> org.hibernate.type.TimeType@68d7a2df
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@68d7a2df
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration timestamp -> org.hibernate.type.TimestampType@56a4f272
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@56a4f272
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@56a4f272
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@4d41ba0f
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration calendar -> org.hibernate.type.CalendarType@7fdab70c
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@7fdab70c
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@7fdab70c
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@6f94a5a5
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration locale -> org.hibernate.type.LocaleType@7bc44ce8
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@7bc44ce8
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration currency -> org.hibernate.type.CurrencyType@337bbfdf
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@337bbfdf
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration timezone -> org.hibernate.type.TimeZoneType@2924f1d8
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@2924f1d8
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration class -> org.hibernate.type.ClassType@6e0c6a7a
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@6e0c6a7a
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@6c3659be
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@6c3659be
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@5f0f9947
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@2e66bc32
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration binary -> org.hibernate.type.BinaryType@4d95a72e
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration byte[] -> org.hibernate.type.BinaryType@4d95a72e
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration [B -> org.hibernate.type.BinaryType@4d95a72e
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@4d21c56e
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@4d21c56e
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@4d21c56e
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration image -> org.hibernate.type.ImageType@15639440
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration characters -> org.hibernate.type.CharArrayType@5a6d30e2
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration char[] -> org.hibernate.type.CharArrayType@5a6d30e2
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration [C -> org.hibernate.type.CharArrayType@5a6d30e2
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@6dcc40f5
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@6dcc40f5
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@6dcc40f5
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration text -> org.hibernate.type.TextType@328d044f
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration blob -> org.hibernate.type.BlobType@6540cf1d
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@6540cf1d
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@5484117b
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration clob -> org.hibernate.type.ClobType@1305c126
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@1305c126
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@762637be
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration serializable -> org.hibernate.type.SerializableType@5634d0f4
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration object -> org.hibernate.type.ObjectType@7d44a19
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@7d44a19
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@7a485a36
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@5cf3157b
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@625dfff3
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@26350ea2
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@1e9469b8
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@5a08efdc
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@57272109
+2016-04-15 19:20:43 DEBUG BasicTypeRegistry:143 - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@59696551
+2016-04-15 19:20:43 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2016-04-15 19:20:43 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2016-04-15 19:20:43 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2016-04-15 19:20:43 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2016-04-15 19:20:43 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [hilo] -> [org.hibernate.id.TableHiLoGenerator]
+2016-04-15 19:20:43 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2016-04-15 19:20:43 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2016-04-15 19:20:43 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2016-04-15 19:20:43 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.SequenceGenerator]
+2016-04-15 19:20:43 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2016-04-15 19:20:43 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2016-04-15 19:20:43 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2016-04-15 19:20:43 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2016-04-15 19:20:43 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2016-04-15 19:20:43 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2016-04-15 19:20:43 DEBUG Ejb3Configuration:525 - Processing PersistenceUnitInfo [
+	name: default
+	persistence provider classname: null
+	classloader: WebappClassLoader
+  context: /demo
+  delegate: false
+  repositories:
+----------> Parent Classloader:
+ClassRealm[plugin>org.codehaus.mojo:tomcat-maven-plugin:1.1, parent: sun.misc.Launcher$AppClassLoader@5c647e05]
+
+	Temporary classloader: org.springframework.instrument.classloading.SimpleThrowawayClassLoader@5f69e2b
+	excludeUnlistedClasses: true
+	JTA datasource: null
+	Non JTA datasource: org.springframework.jdbc.datasource.DriverManagerDataSource@984169e
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/C:/Users/Carlos/Downloads/Spring-demo-projects/EMS-Spring-Tags-Template/target/classes/
+	Shared Cache Mode: UNSPECIFIED
+	Validation Mode: AUTO
+	Jar files URLs []
+	Managed classes names [
+		ems.DataSubsystem.Booth
+		ems.DataSubsystem.Event
+		ems.DataSubsystem.Location
+		ems.DataSubsystem.Ticket]
+	Mapping files names []
+	Properties []
+2016-04-15 19:20:43 DEBUG Ejb3Configuration:841 - Detect class: true; detect hbm: true
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:125 - Searching mapped entities in jar/par: file:/C:/Users/Carlos/Downloads/Spring-demo-projects/EMS-Spring-Tags-Template/target/classes/
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:171 - Filtering: ems.AccountSubsystem.AccountControl
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:171 - Filtering: ems.AccountSubsystem.DashboardPage
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:171 - Filtering: ems.AccountSubsystem.LandingPage
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:171 - Filtering: ems.AccountSubsystem.LoginPage
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:171 - Filtering: ems.AccountSubsystem.RegistrationPage
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:171 - Filtering: ems.AdminSubsystem.AddLocationPage
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:171 - Filtering: ems.AdminSubsystem.AddUserPage
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:171 - Filtering: ems.AdminSubsystem.AdminControl
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:171 - Filtering: ems.DataSubsystem.Booth
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:222 - Java element filter matched for ems.DataSubsystem.Booth
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:171 - Filtering: ems.DataSubsystem.BoothRepository
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:171 - Filtering: ems.DataSubsystem.Datastore
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:171 - Filtering: ems.DataSubsystem.Event
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:222 - Java element filter matched for ems.DataSubsystem.Event
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:171 - Filtering: ems.DataSubsystem.EventRepository
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:171 - Filtering: ems.DataSubsystem.Location
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:222 - Java element filter matched for ems.DataSubsystem.Location
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:171 - Filtering: ems.DataSubsystem.LocationRepository
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:171 - Filtering: ems.DataSubsystem.Payment
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:171 - Filtering: ems.DataSubsystem.PaymentRepository
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:171 - Filtering: ems.DataSubsystem.Proposal
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:171 - Filtering: ems.DataSubsystem.ProposalRepository
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:171 - Filtering: ems.DataSubsystem.ProposalReview
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:171 - Filtering: ems.DataSubsystem.ProposalReviewRepository
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:171 - Filtering: ems.DataSubsystem.Ticket
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:222 - Java element filter matched for ems.DataSubsystem.Ticket
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:171 - Filtering: ems.DataSubsystem.TicketRepository
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:171 - Filtering: ems.DataSubsystem.User
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:171 - Filtering: ems.DataSubsystem.UserRepository
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:171 - Filtering: ems.EventSubsystem.AndroidAPI
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:171 - Filtering: ems.EventSubsystem.AndroidAPIInterface
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:171 - Filtering: ems.EventSubsystem.BookBoothPage
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:171 - Filtering: ems.EventSubsystem.EventControl
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:171 - Filtering: ems.EventSubsystem.EventDetailsPage
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:171 - Filtering: ems.EventSubsystem.EventsPage
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:171 - Filtering: ems.EventSubsystem.NewEventPage
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:171 - Filtering: ems.EventSubsystem.PaypalAPI
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:171 - Filtering: ems.EventSubsystem.PurchaseTicketPage
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:171 - Filtering: ems.EventSubsystem.TransactionHistoryPage
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:171 - Filtering: ems.ProposalSubsystem.ProposalControl
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:171 - Filtering: ems.ProposalSubsystem.ProposalListPage
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:171 - Filtering: ems.ProposalSubsystem.ReviewProposalPage
+2016-04-15 19:20:43 DEBUG AbstractJarVisitor:171 - Filtering: ems.ProposalSubsystem.SubmitProposalPage
+2016-04-15 19:20:43 DEBUG IntegratorServiceImpl:59 - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2016-04-15 19:20:43 DEBUG IntegratorServiceImpl:59 - Adding Integrator [org.hibernate.ejb.event.JpaIntegrator].
+2016-04-15 19:20:43 DEBUG NamingHelper:50 - No JNDI name configured for binding Ejb3Configuration
+2016-04-15 19:20:43 DEBUG Configuration:1722 - Preparing to build session factory with filters : {}
+2016-04-15 19:20:43 DEBUG Configuration:3366 - Processing hbm.xml files
+2016-04-15 19:20:43 DEBUG Configuration:3396 - Process annotated classes
+2016-04-15 19:20:43 DEBUG AnnotationBinder:528 - Binding entity from annotated class: ems.DataSubsystem.Booth
+2016-04-15 19:20:43 DEBUG Ejb3Column:196 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2016-04-15 19:20:43 DEBUG EntityBinder:354 - Import with entity name Booth
+2016-04-15 19:20:43 DEBUG EntityBinder:524 - Bind entity ems.DataSubsystem.Booth on table booths
+2016-04-15 19:20:43 DEBUG DefaultListableBeanFactory:568 - Retrieved dependent beans for bean 'org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter#3ae0b770': [entityManagerFactoryBean]
+2016-04-15 19:20:44 WARN  XmlWebApplicationContext:487 - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactoryBean' defined in ServletContext resource [/WEB-INF/spring-servlet.xml]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build EntityManagerFactory
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1566)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:956)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:747)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4135)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4630)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1045)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:785)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1045)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:445)
+	at org.apache.catalina.startup.Embedded.start(Embedded.java:825)
+	at org.codehaus.mojo.tomcat.AbstractRunMojo.startContainer(AbstractRunMojo.java:558)
+	at org.codehaus.mojo.tomcat.AbstractRunMojo.execute(AbstractRunMojo.java:255)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:862)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:286)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build EntityManagerFactory
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:914)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:889)
+	at org.springframework.orm.jpa.vendor.SpringHibernateEjbPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateEjbPersistenceProvider.java:51)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:343)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1625)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1562)
+	... 43 more
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: ems.DataSubsystem.Booth
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:276)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:224)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:663)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processAnnotatedClassesQueue(Configuration.java:3406)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processMetadata(Configuration.java:3360)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1334)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1724)
+	at org.hibernate.ejb.EntityManagerFactoryImpl.<init>(EntityManagerFactoryImpl.java:84)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:904)
+	... 49 more
+2016-04-15 19:20:44 DEBUG DefaultListableBeanFactory:512 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3d49fd31: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,mvcUriComponentsContributor,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,mvcResourceUrlProvider,org.springframework.web.servlet.handler.MappedInterceptor#1,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,mvcPathMatcher,mvcUrlPathHelper,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,messageSource,entityManagerFactoryBean,dataSource,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor]; root of factory hierarchy
+2016-04-15 19:20:44 ERROR ContextLoader:331 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactoryBean' defined in ServletContext resource [/WEB-INF/spring-servlet.xml]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build EntityManagerFactory
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1566)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:956)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:747)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4135)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4630)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1045)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:785)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1045)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:445)
+	at org.apache.catalina.startup.Embedded.start(Embedded.java:825)
+	at org.codehaus.mojo.tomcat.AbstractRunMojo.startContainer(AbstractRunMojo.java:558)
+	at org.codehaus.mojo.tomcat.AbstractRunMojo.execute(AbstractRunMojo.java:255)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:862)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:286)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build EntityManagerFactory
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:914)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:889)
+	at org.springframework.orm.jpa.vendor.SpringHibernateEjbPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateEjbPersistenceProvider.java:51)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:343)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1625)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1562)
+	... 43 more
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: ems.DataSubsystem.Booth
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:276)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:224)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:663)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processAnnotatedClassesQueue(Configuration.java:3406)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processMetadata(Configuration.java:3360)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1334)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1724)
+	at org.hibernate.ejb.EntityManagerFactoryImpl.<init>(EntityManagerFactoryImpl.java:84)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:904)
+	... 49 more

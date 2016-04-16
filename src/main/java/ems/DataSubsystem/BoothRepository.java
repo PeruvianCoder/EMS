@@ -23,7 +23,7 @@ public class BoothRepository {
 	 * @return Number of booths of the given size available to be booked for that event.
 	 */
 	public int retrieveNumBoothAvailable(String size, Event event) { 
-		int result = (int) manager.createQuery("select b.Booths_count from booths b join exhibit e on e.Events_Id = :eventId where b.size = :size")
+		int result = (int) manager.createNativeQuery("select b.Booths_count from booths b join exhibit e on e.Events_Id = :eventId where b.size = :size")
 					.setParameter("size", size)
 					.setParameter("eventName", event.id)
 					.getSingleResult();
@@ -35,7 +35,9 @@ public class BoothRepository {
 	 * @param booth The booth object to be stored in the database.
 	 */
 	public void storeBooth(Booth booth) { 
+		manager.getTransaction().begin();
 		manager.persist(booth);
+		manager.getTransaction().begin();
 	 }
 
 	/**
