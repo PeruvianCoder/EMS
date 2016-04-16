@@ -8,7 +8,11 @@ package ems.DataSubsystem;
  * @author emsTeam
  */
 public class User {
-
+	
+	/**
+	 * Unique identifier of each user.
+	 */
+	public int id;
 	/**
 	 * The profile picture uploaded by this user, if any.
 	 */
@@ -49,6 +53,12 @@ public class User {
 	 * Preferred email address of the user.
 	 */
 	public String email;
+	/**
+	 * Getter of Id
+	 */
+	public int getId(){
+		return id;
+	}
 	/**
 	 * Getter of ProfilePic
 	 */

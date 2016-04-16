@@ -1,13 +1,28 @@
 package ems.DataSubsystem;
 
-public class ProposalRepository {
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 
+public class ProposalRepository {
+	@PersistenceContext
+	private EntityManager manager;
+	
+	/**
+	 * Initializes the EntityManager used throughout the repository
+	 * @param man EntityManager used to access data source
+	 */
+	public ProposalRepository(EntityManager man){
+		this.manager = man;
+	}
+	
 	/**
 	 * Stores a proposal object to the database.
 	 * @param proposal Proposal object to be stored.
 	 */
 	public void storeProposal(Proposal proposal) { 
-		// TODO Auto-generated method
+		manager.getTransaction().begin();
+		manager.persist(proposal);
+		manager.getTransaction().commit();
 	 }
 
 	/**
@@ -16,8 +31,10 @@ public class ProposalRepository {
 	 * @return The proposal object with the given title.
 	 */
 	public Proposal retrieveProposal(String proposalTitle) { 
-		// TODO Auto-generated method
-		return null;
+		Proposal proposal = manager.createQuery("select p from Proposal p where p.title = :proposalTitle", Proposal.class)
+							.setParameter("proposalTitle", proposalTitle)
+							.getSingleResult();
+		return proposal;
 	 } 
 
 }

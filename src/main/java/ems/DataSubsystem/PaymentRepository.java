@@ -2,14 +2,30 @@ package ems.DataSubsystem;
 
 import java.util.List;
 
-public class PaymentRepository {
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 
+public class PaymentRepository {
+	@PersistenceContext
+	private EntityManager manager;
+	
+	/**
+	 * Initializes the EntityManager used throughout the repository
+	 * @param man EntityManager used to access data source
+	 */
+	public PaymentRepository(EntityManager man){
+		this.manager = man;
+	}
+	
 	/**
 	 * Stores a payment object to the database.
 	 * @param payment Payment object to be stored.
 	 */
 	public void storePayment(Payment payment) { 
 		// TODO Auto-generated method
+		manager.getTransaction().begin();
+		manager.persist(payment);
+		manager.getTransaction().commit();
 	 }
 
 	/**
@@ -18,8 +34,11 @@ public class PaymentRepository {
 	 * @return The list of transactions associated with the user.
 	 */
 	public List<Payment> retrievePaymentsList(User user) { 
-		// TODO Auto-generated method
-		return null;
+		//todo: reminder to self please test this query! C.G.
+		List<Payment> userPayments = manager.createNativeQuery("select p from paymenttransaction p join own o on o.Users_id = :userId", Payment.class)
+									.setParameter("userId", user.id)
+									.getResultList();
+		return userPayments;
 	 } 
 
 }
